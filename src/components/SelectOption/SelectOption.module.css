@@ -192,3 +192,39 @@ svg {
     justify-content: center;
     gap: 20px;
 }
+
+@media screen and (max-width: 250px) {
+    .selectBlock {
+        top: 60%;
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 250px) and (max-width: 420px) {
+    .selectBlock {
+        width: 90%;
+        top: 60%;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 576px) {
+    .selectBlock {
+        width: 90%;
+        top: 60%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 792px) {
+    .selectBlock {
+        width: 90%;
+        top: 60%;
+    }
+}
+
+
+@media screen and (min-width: 792px) and (max-width: 992px) {
+    .selectBlock {
+        width: 90%;
+        top: 60%;
+    }
+}
