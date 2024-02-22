@@ -1,10 +1,12 @@
 import SelectOption from "./components/SelectOption/SelectOption"
+import Header from "./components/Header/Header"
 
 function App() {
   return (
-    <div>
+    <>
+      <Header/>
       <SelectOption/>
-    </div>
+    </>
   )
 }
 
