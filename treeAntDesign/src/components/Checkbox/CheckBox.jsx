@@ -47,11 +47,11 @@ const Checkbox = () => {
       return child;
     });
 
-    checkParentPending(item);
+    checkPending(item);
     return db;
   };
 
-  const checkParentPending = (item) => {
+  const checkPending = (item) => {
     const childArr = dataRoot.filter((child) => {
       if (child.parentId === item?.parentId) {
         return child;
@@ -62,7 +62,7 @@ const Checkbox = () => {
       dataRoot.map((i) => {
         if (i.id === item?.parentId) {
           i.checked = item.checked;
-          checkParentPending(i);
+          checkPending(i);
         }
         return i;
       });
@@ -70,7 +70,7 @@ const Checkbox = () => {
       dataRoot.map((i) => {
         if (i.id === item?.parentId) {
           i.checked = "pending";
-          checkParentPending(i);
+          checkPending(i);
         }
         return i;
       });
