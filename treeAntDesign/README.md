@@ -1,8 +1,87 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Clone Tree Ant Design
+- Build Tree
+- Use recursive
+- Tags: pending, checked, not-checked
+- Data root(backend):  
+data = [
+  {
+    title: "tieu de 0",
+    id: 0,
+    parentId: null,
+  },
+  {
+    title: "tieu de 1",
+    id: 1,
+    parentId: null,
+  },
+  {
+    title: "tieu de 1.0",
+    id: 2,
+    parentId: 1,
+  },
+  {
+    title: "tieu de 1.1",
+    id: 3,
+    parentId: 1,
+  },
+  {
+    title: "tieu de 1.2",
+    id: 4,
+    parentId: 1,
+  },
+  {
+    title: "tieu de 1.2.0",
+    id: 7,
+    parentId: 4,
+  },
+  {
+    title: "tieu de 3",
+    id: 11,
+    parentId: null,
+  },
+  {
+    title: "tieu de 3.1.1",
+    id: 14,
+    parentId: 13,
+  },
+  {
+    title: "tieu de 1.2.1",
+    id: 8,
+    parentId: 4,
+  },
+  {
+    title: "tieu de 1.2.2",
+    id: 9,
+    parentId: 4,
+  },
+  {
+    title: "tieu de 0.1",
+    id: 5,
+    parentId: 0,
+  },
+  {
+    title: "tieu de 0.2",
+    id: 6,
+    parentId: 0,
+  },
+  {
+    title: "tieu de 2",
+    id: 10,
+    parentId: null,
+  },
+  {
+    title: "tieu de 3.1",
+    id: 13,
+    parentId: 11,
+  },
+  {
+    title: "tieu de 2.1",
+    id: 12,
+    parentId: 10,
+  },
+  {
+    title: "tieu de 1.2.2.0",
+    id: 15,
+    parentId: 9,
+  },
+];

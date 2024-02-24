@@ -1,7 +1,7 @@
 import "./CheckBox.css"
 import { useRecoilState } from "recoil";
 import { useCallback, useEffect, useState } from "react";
-import TreeDisplay from "../TreeRender/TreeRender";
+import TreeRender from "../TreeRender/TreeRender";
 import treeData from "../../store/TreeData";
 import get from "../utils/GetData";
 const Checkbox = () => {
@@ -85,7 +85,7 @@ const Checkbox = () => {
 
   return (
     <div className="container">
-      <TreeDisplay handleData={getData} data={data} />
+      <TreeRender handleData={getData} data={data} />
     </div>
   );
 };
